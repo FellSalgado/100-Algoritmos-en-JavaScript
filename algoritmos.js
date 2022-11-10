@@ -1,11 +1,11 @@
 let a = "#3 elegir operacion";
 
-if (a == "#3 elegir operacion") {
+if (a == "#3 mayor, menor o diferencia") {
 	const message = []
 	let num1 = parseInt(prompt("Ingrese el primer numero"))
 	let num2 = parseInt(prompt("Ingrese el segundo numero"))
-	
-	function resultado(n1, n2, operacion) {
+
+	function resultado(operacion, n1, n2) {
 		if (operacion > 3) {
 			return alert("Ingreso una opcion incorrecta")
 		} else {
@@ -23,5 +23,5 @@ if (a == "#3 elegir operacion") {
 	}
 	
 	let operacion = prompt("ingrese:\n [1] par encontrar el mayor\n [2] para encontrar el menor\n [3] para hayar la difererencia entre los dos numeros")
-	resultado(num1, num2, operacion)
+	resultado(operacion, num1, num2)
 }

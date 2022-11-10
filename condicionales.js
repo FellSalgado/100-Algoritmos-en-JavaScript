@@ -1,4 +1,4 @@
-let algoritmo = "#5 piedra, papel o tijera"
+let algoritmo = "#7"
 
 if (algoritmo == "#1 una contraseña") {
 	let user = prompt("Ingrese su nombre de usuario:");
@@ -70,19 +70,36 @@ if (algoritmo == "#5 piedra, papel o tijera") {
     	    alert("Por lo tanto, quedaron enpatados");
         } else if (jugador == 1 && pc == 3) {
         	alert("A si que ganaste");
-            triunfos = triunfos + 1
+            triunfos += 1
         } else if (jugador == 2 && pc ==1) {
         	alert("Genial, ganaste");
-            triunfos = triunfos + 1
+            triunfos += 1
         } else if (jugador == 3 && pc == 2) {
         	alert("ganaste 😉");
-            triunfos = triunfos + 1
+            triunfos += 1
         } else {
         	alert ("Asi que perdiste ☠");
-            perdidas = perdidas + 1
+            perdidas += 1
         }
     }
     alert("Ganaste " + triunfos + " veses y perdiste " + perdidas + " veses")
 }
 
+if (algoritmo == "#6 encontrar el numero mayor") {
+    const numeros = []
+    let p = 0
+    let cantidad = parseInt(prompt("Ingrese la cantidad de numero a comparar"))
+    let mayor
+
+    for(let i = 1; i <= cantidad; i++){
+        numeros[p] = parseInt(prompt("Ingrese numero " + i))
+        if(i == 1){
+            mayor = numeros[p]
+        } else if(numeros[p] > numeros[p-1] ){
+            mayor = numeros[p]
+        }
+        p++
+    }
+    alert("El numero mayor es:" + mayor)
+}
 //Event Listener .Escuchador de eventos

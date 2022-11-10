@@ -1,13 +1,15 @@
-let a = "metodos";
+let algoritmo = "#3 block de notas";
 const ms = (message) => document.write(message + "<br>")
 
-if (a == "metodos") {
+/* "metodos"
     const numbers = [1, 2, 3, 2];
+
     ms(numbers.map((x) => x * 2));
     ms(numbers.filter((x) => x < 2));
-}
+    
+*/
 
-if (a == "a") {
+/* if (a == "a") {
     const array = []
     const objectArray = [
         {languaje: "JavaScript"},
@@ -17,8 +19,9 @@ if (a == "a") {
 
     const arrayOfArray = [[2, 3], [8, 6], ["name", true]]
 }
+*/
 
-if (a == "b") {
+if (algoritmo == "#1 elementos unicos") {
     const frameworks = [
         "React", "Next", "Angular",
         "Vue", "Angular", "Next"
@@ -27,4 +30,17 @@ if (a == "b") {
     const unicos = [...new Set(frameworks)]
     ms(frameworks)
     ms(unicos)
+}
+
+if (algoritmo == "#2 suma de positivos") {
+    const numeros = []
+}
+
+if (algoritmo == "#3 block de notas") {
+    let nota = prompt("ingrese sus notas, separando una de otras con una coma");
+    let split = nota.split('');
+    let from = Array.from(nota);
+
+    console.log(split);
+    console.log(from);
 }
