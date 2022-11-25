@@ -1,6 +1,0 @@
-1-identificar el problema
-2-darle solucion al problema
-3-realizar un informe del -> redacción
-
-100 ejercicios / pseint / diagrama de flujo
-100 consultas de sql

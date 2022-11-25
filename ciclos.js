@@ -79,3 +79,17 @@ if (algorithm == "#6 ¿es un numero primo?") {
 		primerNumero(i) && console.log(i)
 	}
 }
+
+if (algoritmo == "#7 fizzBuzz") {
+    function fizzBuzz() {
+        for (let i = 0; i <= 50; i++) {
+            if (i % 15 == 0) console.log('fizzbuzz');
+			else if (i % 3 == 0) console.log('fiz');
+			else if (i % 5 == 0) console.log('buzz');
+			else console.log(i);
+        }
+    }
+}
+
+if (algoritmo == "#8") {
+}

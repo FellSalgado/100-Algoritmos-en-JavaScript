@@ -80,5 +80,10 @@ if (funcion == "#6 obtener la raiz, cuadrada o cubica") {
     console.log(`Raíz cubica = ${obtenerRaiz("", 2)}`)
 }
 
-if (funcion == "#7 ") { 
+if (algoritmo == "#7 saludar al usuario") {
+    const saludar = (name) => {
+        return alert("Hola " + name)
+    }
+
+    saludar(prompt("ingrese su nombre"))
 }

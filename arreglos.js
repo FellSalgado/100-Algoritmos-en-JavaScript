@@ -1,12 +1,11 @@
-let algoritmo = "#3 block de notas";
-const ms = (message) => document.write(message + "<br>")
+let algoritmo = '#3 block de notas';
+const ms = (message) => document.write(message);
 
 /* "metodos"
     const numbers = [1, 2, 3, 2];
 
     ms(numbers.map((x) => x * 2));
     ms(numbers.filter((x) => x < 2));
-    
 */
 
 /* if (a == "a") {
@@ -21,26 +20,26 @@ const ms = (message) => document.write(message + "<br>")
 }
 */
 
-if (algoritmo == "#1 elementos unicos") {
-    const frameworks = [
-        "React", "Next", "Angular",
-        "Vue", "Angular", "Next"
-    ]
+if (algoritmo == '#1 elementos unicos') {
+    const frameworks = ['React', 'Next', 'Angular', 'Vue', 'Angular', 'Next'];
 
-    const unicos = [...new Set(frameworks)]
-    ms(frameworks)
-    ms(unicos)
+    const unicos = [...new Set(frameworks)];
+    ms(frameworks);
+    ms(unicos);
 }
 
-if (algoritmo == "#2 suma de positivos") {
-    const numeros = []
+if (algoritmo == '#2 suma de positivos') {
+    const numeros = [];
 }
 
-if (algoritmo == "#3 block de notas") {
-    let nota = prompt("ingrese sus notas, separando una de otras con una coma");
-    let split = nota.split('');
-    let from = Array.from(nota);
+if (algoritmo == '#3 block de notas') {
+    let note = prompt('ingrese sus notas, separando una de otras con una coma');
+    let split = note.split('');
+    let from = Array.from(split);
 
     console.log(split);
     console.log(from);
+}
+
+if (algoritmo = '#4 ') {
 }

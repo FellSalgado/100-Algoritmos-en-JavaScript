@@ -1,4 +1,4 @@
-let algoritmo = "#7"
+let algoritmo = "#9 el numero anterior y el numero siguiente"
 
 if (algoritmo == "#1 una contraseña") {
 	let user = prompt("Ingrese su nombre de usuario:");
@@ -102,4 +102,42 @@ if (algoritmo == "#6 encontrar el numero mayor") {
     }
     alert("El numero mayor es:" + mayor)
 }
-//Event Listener .Escuchador de eventos
+
+if (algoritmo == "#7 sugerir emojis") {
+    let emoji = prompt("ingrese un nombre de un emoji");
+    switch (emoji) {
+        case "feliz":
+            alert("😁😀")
+            break;
+        case "bravo":
+            alert("😡😠")
+            break;
+        case "triste":
+            alert("😓😔")
+            break;
+        default:
+            alert("a ingresado un opcion incorrecta")
+            break;
+    }
+}
+
+if (algoritmo == "#8 sumando dos numeros") {
+    let num1 = parseInt(prompt("ingrese el primer numero"))
+    let num2 = parseInt(prompt("ingrese el segundo numero"))
+
+    let resultado = num1 + num2
+    alert(`la suma entre ${num1} y ${num2} es igual a ${resultado}`)
+}
+
+if (algoritmo == "#9 el numero anterior y el numero siguiente") {
+    let numero = parseInt(prompt("digite el numero"))
+
+    let suc = numero + 1
+    let ant = numero - 1
+    alert(
+        `el numero anterior de ${numero} es ${ant}
+        y el numero siguiente de ${numero} es ${suc}`
+    )
+}
+
+if (algoritmo == "#")
