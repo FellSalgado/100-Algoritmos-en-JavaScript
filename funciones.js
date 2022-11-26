@@ -81,9 +81,7 @@ if (funcion == "#6 obtener la raiz, cuadrada o cubica") {
 }
 
 if (algoritmo == "#7 saludar al usuario") {
-    const saludar = (name) => {
-        return alert("Hola " + name)
-    }
+    const saludar = (name) => alert("Hola " + name)
 
     saludar(prompt("ingrese su nombre"))
 }
