@@ -334,7 +334,7 @@ if (algoritmo == "sumar los salarios") {
     }
 }
 
-if (algoritmo == "Multiplicar propiedades numericas por 2") {
+if (algoritmo == "multiplicar propiedades numericas por 2") {
     const menu = {
         width: 200,
         height: 400,

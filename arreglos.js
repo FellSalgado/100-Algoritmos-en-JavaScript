@@ -1,4 +1,4 @@
-let algoritmo = '#3 block de notas';
+let algoritmo = '#5 sumando elementos de un conjunto';
 const ms = (message) => document.write(message);
 
 /* "metodos"
@@ -41,5 +41,23 @@ if (algoritmo == '#3 block de notas') {
     console.log(from);
 }
 
-if (algoritmo = '#4 ') {
+if (algoritmo == '#4 carrito de compras') {
+    const productos = [];
+    let cantidad = parseInt(prompt('Digita cuantos productos desea guardar'));
+
+    for (let i = 1; i <= cantidad; i++) {
+        productos[i] = prompt(`producto ${i}`);
+    }
+
+    alert(`Sus productos fueron guardados exitosamente:\n ${productos}`);
+}
+
+if (algoritmo == '#5 sumando elementos de un conjunto') {
+    const numeros = []
+    numeros[0] = parseInt(prompt("Ingrese el primer numero"))
+    numeros[1] = parseInt(prompt("Ingrese el segundo numero"))
+
+    let operacion = numeros[0] + numeros[1]
+
+    alert("El resultado es: " + operacion)
 }

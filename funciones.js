@@ -31,6 +31,8 @@ if (funcion == "#2 Convertir Booleano a String") {
     function booleantoString(b) {
         return b.toString();
     }
+    let bolean = true
+    console.log(booleantoString(bolean));
 }
 
 if (funcion == "#3 operaciones basicas") {
@@ -53,18 +55,22 @@ if (funcion == "#3 operaciones basicas") {
                 break;
         }
     }
+    console.log(operacionesBasicas("+", 5, 20));
 }
 
 if (funcion == "#4 numero a cadena") {
     function numbertoString(b) {
         return b.toString();
     }
+    let number = parseInt(80)
+    console.log(numbertoString(number));
 }
 
 if (funcion == "#5 el numero opuesto") {
     function numeroOpuesto(num) {
         return (-num);
     }
+    console.log(numeroOpuesto(8));
 }
 
 if (funcion == "#6 obtener la raiz, cuadrada o cubica") {

@@ -25,6 +25,3 @@ if (a == "#3 mayor, menor o diferencia") {
 	let operacion = prompt("ingrese:\n [1] par encontrar el mayor\n [2] para encontrar el menor\n [3] para hayar la difererencia entre los dos numeros")
 	resultado(operacion, num1, num2)
 }
-
-if () {
-}

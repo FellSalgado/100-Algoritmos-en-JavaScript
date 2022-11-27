@@ -40,9 +40,3 @@ Math.abs(-3.14); //3.14
 Math.ceil(3.14); //4
 Math.floor(3.99); //3
 Math.sin(0);
-
-
-
-
-
-//los NaN siempre son diferentes unos de otros
