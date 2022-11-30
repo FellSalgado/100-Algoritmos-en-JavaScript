@@ -1,4 +1,4 @@
-let algorithm = '#23 de cinco en cinco';
+let algorithm = '#7 del 1 al 10 y en reversa';
 
 if (algorithm == '#1 buscar numeros pares') {
     let cantidad = parseInt(prompt('Ingrese una cantidad de numeros'));
@@ -27,7 +27,11 @@ if (algorithm == '#2 juego de sumar') {
     alert('Tu puntuacion quedo en: ' + puntos + ' puntos');
 }
 
-if (algorithm == '#3 pisos de numeros') {
+if (algorithm == '#3 piramide de numeros') {
+    
+}
+
+if (algorithm == '#4 piramide invertida') {
     let pisos = prompt('Ingrese el numero de pisos');
 
     document.write('<center>');
@@ -40,7 +44,7 @@ if (algorithm == '#3 pisos de numeros') {
     document.write('</center>');
 }
 
-if (algorithm == '#4 mas el anterior') {
+if (algorithm == '#5 mas el anterior') {
     let num = 1;
 
     while (num < 60) {
@@ -49,7 +53,7 @@ if (algorithm == '#4 mas el anterior') {
     }
 }
 
-if (algorithm == '#5 La sucesión de FIBONNACI') {
+if (algorithm == '#6 La sucesión de FIBONNACI') {
     let first = 0;
     let second = 1;
 
@@ -62,34 +66,23 @@ if (algorithm == '#5 La sucesión de FIBONNACI') {
     }
 }
 
-if (algorithm == '#6 del 1 al 20') {
+if (algorithm == '#7 de 1 en 1 hasta el 40') {
     /*Desarrolle un programa que le permita al usuario ingresar un numero y este vaya
-    incrementandose de 1 en 1 hasta llegar al 40. Con la condición de que, sí digita un número mayor a 20,
+    incrementandose de 1 en 1 hasta llegar al 40. Con la condición de que, sí digita un número mayor o igual a 40,
     entonces este se irá desminuyendo de 1 en 1 hasta llegar a 0.*/
 
     let numero = parseInt(prompt('Digite un numero'));
-    if (numero < 20) {
-        while (numero <= 20) {
-            document.write(numero);
-            document.write('<br>');
+    if (numero < 40) {
+        while (numero <= 40) {
+            console.log(numero);
+            console.log('<br>');
             numero++;
         }
     } else {
-        while (numero > 20) {
-            document.write(numero);
-            document.write('<br>');
+        while (numero >= 0) {
+            console.log(numero);
+            console.log('<br>');
             numero--;
-        }
-    }
-}
-
-if (algorithm == '#7 fizzBuzz') {
-    function fizzBuzz() {
-        for (let i = 0; i <= 50; i++) {
-            if (i % 15 == 0) console.log('fizzbuzz');
-            else if (i % 3 == 0) console.log('fiz');
-            else if (i % 5 == 0) console.log('buzz');
-            else console.log(i);
         }
     }
 }
@@ -332,7 +325,15 @@ if (algorithm == '#20 valor inicial, valor final y incremento') {
 if (algorithm == '#21 ') {
 }
 
-if (algorithm == '#22') {
+if (algorithm == '#22 fizzBuzz') {
+    function fizzBuzz() {
+        for (let i = 0; i <= 50; i++) {
+            if (i % 15 == 0) console.log('fizzbuzz');
+            else if (i % 3 == 0) console.log('fiz');
+            else if (i % 5 == 0) console.log('buzz');
+            else console.log(i);
+        }
+    }
 }
 
 if (algorithm == '#23 de cinco en cinco') {
@@ -361,4 +362,8 @@ if (algorithm == '#24 ¿es un numero primo?') {
     for (let i = 0; i <= 100; i++) {
         primerNumero(i) && console.log(i);
     }
+}
+
+if (algorithm == '#25 ') {
+
 }

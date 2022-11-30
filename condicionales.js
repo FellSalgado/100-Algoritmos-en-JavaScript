@@ -1,4 +1,4 @@
-let algoritmo = '#30 ¿nesecito dieta?';
+let algoritmo = '#34 litros a galones';
 
 if (algoritmo == '#1 una contraseña') {
     let user = prompt('Ingrese su nombre de usuario:');
@@ -34,9 +34,6 @@ if (algoritmo == '#4 ¿Cual es el mayor y cual es el menor?') {
 }
 
 if (algoritmo == '#5 piedra, papel o tijera') {
-    const aleatorio = (min, max) =>
-        Math.floor(Math.random() * (max - min + 1) + 1);
-
     function choice(jugada) {
         let resultado = '';
         switch (jugada) {
@@ -61,9 +58,12 @@ if (algoritmo == '#5 piedra, papel o tijera') {
     let perdidas = 0;
 
     for (let i = 0; i < 3; i++) {
-        pc = aleatorio(1, 3);
+        pc = Math.floor(
+            Math.random() * (max - min + 1) + 1
+        );
         let jugador = parseInt(
-            prompt('Wellcome, to play select:\n 1.Piedra\n 2.Papel\n 3.Tijera')
+            prompt('Wellcome, to play select...'
+            )
         );
 
         alert('Seleccionaste ' + choice(jugador));
@@ -85,7 +85,9 @@ if (algoritmo == '#5 piedra, papel o tijera') {
             perdidas += 1;
         }
     }
-    alert('Ganaste ' + triunfos + ' veses y perdiste ' + perdidas + ' veses');
+    alert(
+        'Ganaste ' + triunfos + ' veses y perdiste ' + perdidas + ' veses'
+    );
 }
 
 if (algoritmo == '#6 encontrar el numero mayor') {
@@ -109,10 +111,12 @@ if (algoritmo == '#6 encontrar el numero mayor') {
 }
 
 if (algoritmo == '#7 el perimetro de un cuadrado') {
-    let lados = parseInt(prompt('Ingrese la longitud de los lados del cuadrado'))
+    let lados = parseInt(
+        prompt('Ingrese la longitud de los lados del cuadrado')
+    );
 
-    let perimetro = lados * 4
-    alert(`El perimetro del cuadrado es:\n ${perimetro}cm`)
+    let perimetro = lados * 4;
+    alert(`El perimetro del cuadrado es:\n ${perimetro}cm`);
 }
 
 if (algoritmo == '#8 sumando dos numeros') {
@@ -179,7 +183,8 @@ if (algoritmo == '#12 pintado paredes') {
     let pintura = areaTotal / 2;
 
     alert(
-        `para pintar un pared con un area de ${areaTotal} m², nesecitara ${pintura} litro/s de pintura`
+        `para pintar un pared con un area de ${areaTotal} m²,
+        nesecitara ${pintura} litro/s de pintura`
     );
 }
 
@@ -210,9 +215,9 @@ if (algoritmo == '#14 aumento de salario') {
 }
 
 if (algoritmo == '#15 el salario del mes') {
-    /* desarrolle un programa que lea el numero de dias trabajados
+     desarrolle un programa que lea el numero de dias trabajados
     en un mes y muestre el salario del funcionario, sabiendo que el trabaja 8 horas
-    y gana $25.000 por hora trabajada */
+    y gana $25.000 por hora trabajada
 
     let diasTrabajados = 2;
     let salario = diasTrabajados * 8 * 25000;
@@ -220,10 +225,10 @@ if (algoritmo == '#15 el salario del mes') {
 }
 
 if (algoritmo == '#16 cigarros diarios') {
-    /* Desarrolle un programa para calcular la reduccion de tiempo de vida de
+     Desarrolle un programa para calcular la reduccion de tiempo de vida de
     un fumador. Pregunte la cantidad de cigarros fumados por dia y cuantos años
     ya lleva fumando. Considere que un fumador pierde 10 minutos de vida con cada cigarrillo.
-    Calcule cuantos dias de vida un fumador perdera y muestre el total en dias. */
+    Calcule cuantos dias de vida un fumador perdera y muestre el total en dias.
 
     let cigarrosPorDia = parseInt(
         prompt('escriba cuantos cigarros fuma al dia')
@@ -237,16 +242,17 @@ if (algoritmo == '#16 cigarros diarios') {
 }
 
 if (algoritmo == '#17 exceso de velocidad') {
-    /* Desarrolle un programa que pregunte la velocidad de un carro,
+     Desarrolle un programa que pregunte la velocidad de un carro,
     en caso de pasarse los 80Km/h, muestre un mensaje diciendo que el usuario fue multado,
     en ese caso, muestre el valor de la multa, cobrando $10 por cada km arriba de la velocidad
-    permitida */
+    permitida
 
     let velocidad = parseInt(prompt('a que velocidad va?'));
     let multa = (velocidad - 80) * 10;
     if (velocidad > 80) {
         alert(
-            `Usted fue multado por exceso de velocidad, su multa cuesta $${multa}`
+            `Usted fue multado por exceso de velocidad,
+            su multa cuesta $${multa}`
         );
     } else {
         alert('Todo bien, maneje con cuidado');
@@ -254,8 +260,8 @@ if (algoritmo == '#17 exceso de velocidad') {
 }
 
 if (algoritmo == '#18 ¿puedo votar?') {
-    /* realice un programa que lea un la edad de una persona y
-    le muestra si esta tiene la edad suficiente para votar. */
+     realice un programa que lea un la edad de una persona y
+    le muestra si esta tiene la edad suficiente para votar.
 
     let edad = prompt('Ingrese su edad');
     if ((edad >= 16 && edad < 18) || edad >= 65) {
@@ -268,8 +274,8 @@ if (algoritmo == '#18 ¿puedo votar?') {
 }
 
 if (algoritmo == '#19 notas de un alumno') {
-    /* desarrolle un algoritmo que calcule el promedio de las notas de un alumno y se muestre en pantalla el resultado final
-    diciendo si aprobo(el promedio debera estar arriba de 5.0). */
+     desarrolle un algoritmo que calcule el promedio de las notas de un alumno y se muestre en pantalla el resultado final
+    diciendo si aprobo(el promedio debera estar arriba de 5.0).
 
     let n1 = parseFloat(prompt('Ingrese la primera nota'));
     let n2 = parseFloat(prompt('Ingrese la segunda nota'));
@@ -281,8 +287,8 @@ if (algoritmo == '#19 notas de un alumno') {
     }
 }
 
-/* desarrolle un programa que lea un numero entero
-y muestre si este es par o impar */
+desarrolle un programa que lea un numero entero
+y muestre si este es par o impar
 if (algoritmo == '#20 ¿numero par o impar?') {
     let numero = parseInt(prompt('ingrese un numero'));
     let conversor = numero % 2;
@@ -294,7 +300,7 @@ if (algoritmo == '#20 ¿numero par o impar?') {
     }
 }
 
-if (algoritmo == '#21 años Bisiestos') {
+if (algoritmo == '#21 años bisiestos') {
     let anio = prompt('Ingrese un año');
 
     if (anio % 400 == 0) {
@@ -305,8 +311,8 @@ if (algoritmo == '#21 años Bisiestos') {
 }
 
 if (algoritmo == '#22 ¿Cual es mayor y cual es menor, o son iguales?') {
-    /* Desarrolle un algoritmo que le permita al usuario ingresar dos numeros y luego
-    le muestre cual de los dos numeros es el mayor, el menor o sí son iguales. */
+     Desarrolle un algoritmo que le permita al usuario ingresar dos numeros y luego
+    le muestre cual de los dos numeros es el mayor, el menor o sí son iguales.
 
     let num1 = parseInt(prompt('Ingrese el primer numero'));
     let num2 = parseInt(prompt('Ingrese el segundo numero'));
@@ -320,58 +326,123 @@ if (algoritmo == '#22 ¿Cual es mayor y cual es menor, o son iguales?') {
     }
 }
 
-if (algoritmo == '#23 el perimetro de un rectangulo') {
-    let base = parseInt(prompt('Ingrese la base del rectangulo'))
-    let altura = parseInt(prompt('Ingrese la altura del rectangulo'))
+if (algoritmo == '#23 el perímetro de un rectangulo') {
+    let base = parseInt(prompt('Ingrese la base del rectangulo'));
+    let altura = parseInt(prompt('Ingrese la altura del rectangulo'));
 
-    let perimetro = (base + altura) * 2
-    alert(`El perimetro del rectangulo es:\n ${perimetro}cm`)
+    let perimetro = (base + altura) * 2;
+    alert(`El perimetro del rectangulo es:\n ${perimetro}cm`);
 }
 
-if (algoritmo == '#24 el perimetro de un triangulo equilatero') {
-    let lados = parseInt(prompt('Ingrese la longitud de los lados del triangulo'))
+if (algoritmo == '#24 el perímetro de un triangulo equilatero') {
+    let lados = parseInt(
+        prompt('Ingrese la longitud de los lados del triangulo')
+    );
 
-    let perimetro = lados * 3
-    alert(`Por lo tanto el perimetro del triangulo es:\n ${perimetro}cm`)
+    let perimetro = lados * 3;
+    alert(`Por lo tanto el perimetro del triangulo es:\n ${perimetro}cm`);
 }
 
 if (algoritmo == '#25 el perímetro de un rombo') {
-    let lados = parseInt(prompt('Ingrese la longitud de los lados del rombo'))
+    let lados = parseInt(prompt('Ingrese la longitud de los lados del rombo'));
 
-    let perimetro = lados * 4
-    alert("Por lo tanto el perimetro del rombo es:\n" + perimetro)
+    let perimetro = lados * 4;
+    alert('Por lo tanto el perimetro del rombo es:\n' + perimetro);
 }
 
 if (algoritmo == '#26 el perímetro de un triangulo isósceles') {
-    let ladosRepetidos = parseInt(prompt('Ingrese la longitud de los 2 lados que se repiten'))
-    let ladoDiferente = parseInt(prompt('Ingrese la longitud del lado diferente'))
+    let ladosRepetidos = parseInt(
+        prompt('Ingrese la longitud de los 2 lados que se repiten')
+    );
+    let ladoDiferente = parseInt(
+        prompt('Ingrese la longitud del lado diferente')
+    );
 
-    let perimetro = (ladosRepetidos * 2) + ladoDiferente
-    alert("Por lo tanto el perimetro del triangulo isósceles es:\n" + perimetro)
+    let perimetro = ladosRepetidos * 2 + ladoDiferente;
+    alert(
+        'Por lo tanto el perimetro del triangulo isósceles es:\n'+ perimetro
+    );
 }
 
-if (algoritmo == '#27 ') {
+if (algoritmo == '#27 el perímetro de un trapecio isósceles') {
+    let ladosOblicuos = 5;
+    let baseMayor = 12;
+    let baseMenor = 6;
+
+    let perimetro = ladosOblicuos * 2 + baseMayor + baseMenor;
+
+    alert('Por lo tanto el perimetro del trapecio isósceles es:\n' + perimetro);
 }
 
-if (algoritmo == '#28') {
+if (algoritmo == '#28 el perímetro de un polígono escalonado') {
+    let base = 6;
+    let altura = 8;
+
+    let perimetro = 2 * (base + altura);
+
+    alert(`El perimetro del polígono escalonado es:\n ${perimetro}cm`);
 }
 
-if (algoritmo == '#29 el area de un circulo') {
+if (algoritmo == '#29 litros a minilitros') {
+    let litros = parseInt(prompt('Ingrese la catidad de litros'));
+    let minilitros = litros * 1000;
+
+    alert(`${litros} litros equivalen a ${minilitros} minilitros`);
+}
+
+if (algoritmo == '#30 ¿necesito una a dieta?') {
+    let peso = parseInt(prompt('Ingrese su peso'));
+
+    alert(
+        peso < 200 ? 'Usted está bien de peso' : '¡Usted se debe poner a dieta!'
+    );
+}
+
+if (algoritmo == '#31 centígrados a fahrenheit') {
+    let centigrados = parseFloat(prompt('Ingresa grados centígrados'));
+    let fahrenheit = (centigrados * 9) / 5 + 32;
+
+    console.log(
+        `${centigrados} centígrados equivalen a ${fahrenheit} fahrenheit`
+    );
+}
+
+if (algoritmo == '#32 fahrenheit a centígrados') {
+    let fahrenheit = parseFloat(prompt('Ingresa grados fahrenheit'));
+    let cetigrados = ((fahrenheit - 32) * 5) / 9;
+
+    console.log(
+        `${fahrenheit} fahrenheit equivalen a ${centigrados} centígrados`
+    );
+}
+
+if (algoritmo == '#33 el perímetro de cualquier polígono regular') {
+    let lado = parseInt(prompt('Ingrese la longitud de los lados'));
+    let cantidadDeLados = parseInt(
+        prompt('Ingrese la centidad de lados que tiene el polígono')
+    );
+
+    console.log(lado * cantidadDeLados);
+}
+
+if (algoritmo == '#34 litros a galones') {
+     elabore un algoritmo que permita convertir
+    un valor expresado en litros a su valor correspondiente en galones
+    let litros = prompt('Ingrese la catidad de litros');
+    let galones = parseInt(litros / 3.785);
+
+    alert(`${litros} litros equivalen a ${galones} galones`);
+}
+
+if (algoritmo == '#35 Comparar si dos números son iguales') {
+}
+
+if (algoritmo == '#36 el area de un circulo') {
     let radio = parseFloat(prompt('Ingrese el radio del circulo'));
     let area = Math.PI * (radio * 2);
 
-    if (area < 100) {
-        alert('El area del circulo es de: ' + area + 'cm²');
-    } else {
-        alert('error!');
-    }
+    alert(area < 100 ? `El area del circulo es de: ${area}cm²` : 'error!');
 }
 
-if (algoritmo == '#30 ¿necesita una a dieta?') {
-    let peso = parseInt(prompt('Ingrese su peso'));
-
-    alert((peso < 200) ? 'Usted está bien de peso': '¡Usted se debe poner a dieta!')
-}
-
-if (algoritmo == '#31') {
+if (algoritmo == '#35 secuencia entre dos numeros') {
 }
