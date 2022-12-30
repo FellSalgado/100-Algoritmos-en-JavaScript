@@ -274,7 +274,7 @@ if (algoritmo == '#18 ¿puedo votar?') {
 }
 
 if (algoritmo == '#19 notas de un alumno') {
-     desarrolle un algoritmo que calcule el promedio de las notas de un alumno y se muestre en pantalla el resultado final
+    desarrolle un algoritmo que calcule el promedio de las notas de un alumno y se muestre en pantalla el resultado final
     diciendo si aprobo(el promedio debera estar arriba de 5.0).
 
     let n1 = parseFloat(prompt('Ingrese la primera nota'));
@@ -287,8 +287,8 @@ if (algoritmo == '#19 notas de un alumno') {
     }
 }
 
-desarrolle un programa que lea un numero entero
-y muestre si este es par o impar
+/* desarrolle un programa que lea un numero entero
+y muestre si este es par o impar */
 if (algoritmo == '#20 ¿numero par o impar?') {
     let numero = parseInt(prompt('ingrese un numero'));
     let conversor = numero % 2;
@@ -434,15 +434,9 @@ if (algoritmo == '#34 litros a galones') {
     alert(`${litros} litros equivalen a ${galones} galones`);
 }
 
-if (algoritmo == '#35 Comparar si dos números son iguales') {
-}
-
-if (algoritmo == '#36 el area de un circulo') {
+if (algoritmo == '#35 el area de un circulo') {
     let radio = parseFloat(prompt('Ingrese el radio del circulo'));
     let area = Math.PI * (radio * 2);
 
     alert(area < 100 ? `El area del circulo es de: ${area}cm²` : 'error!');
-}
-
-if (algoritmo == '#35 secuencia entre dos numeros') {
 }

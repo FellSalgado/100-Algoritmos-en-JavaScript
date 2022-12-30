@@ -26,7 +26,7 @@ if (algoritmo == '#1 elementos unicos') {
     const unicos = [...new Set(frameworks)];
     ms(frameworks);
     ms(unicos);
-} //
+}
 
 if (algoritmo == '#2') {
 }
@@ -38,7 +38,7 @@ if (algoritmo == '#3 block de notas') {
 
     console.log(split);
     console.log(from);
-} //
+}
 
 if (algoritmo == '#4 carrito de compras') {
     const productos = [];
@@ -49,7 +49,7 @@ if (algoritmo == '#4 carrito de compras') {
     }
 
     alert(`Sus productos fueron guardados exitosamente:\n ${productos}`);
-} //
+}
 
 if (algoritmo == '#5 sumando elementos de un arreglo') {
     const numeros = []
@@ -59,7 +59,7 @@ if (algoritmo == '#5 sumando elementos de un arreglo') {
     let operacion = numeros[0] + numeros[1]
 
     alert("El resultado es: " + operacion)
-} //
+}
 
 if (algoritmo == '#6 multiplicando elementos de un arreglo') {
     const numeros = []
@@ -69,7 +69,7 @@ if (algoritmo == '#6 multiplicando elementos de un arreglo') {
     let operacion = numeros[0] * numeros[1]
 
     alert(`El resultado es: ${operacion}`)
-} //
+}
 
 if (algoritmo == "#7 un formulario") {
     function leer(value) {
@@ -85,4 +85,4 @@ if (algoritmo == "#7 un formulario") {
     datos[4] = leer("su numero de documento")
 
     alert(`Sus datos ingresados fueron guardados exitosamente:\n ${datos}`);
-} //
+}

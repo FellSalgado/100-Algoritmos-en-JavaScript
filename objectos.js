@@ -330,7 +330,7 @@ if (algoritmo == "sumar los salarios") {
     const salaries = {
         Felix: 100,
         Pete: 160,
-        Pedro: 130
+        Pedro: 130,
     }
 }
 

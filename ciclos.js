@@ -28,7 +28,6 @@ if (algorithm == '#2 juego de sumar') {
 }
 
 if (algorithm == '#3 piramide de numeros') {
-    
 }
 
 if (algorithm == '#4 piramide invertida') {
@@ -346,7 +345,7 @@ if (algorithm == '#23 de cinco en cinco') {
     console.log('termino!');
 }
 
-if (algorithm == '#24 ¿es un numero primo?') {
+if (algorithm == '#24 numeros primos') {
     const primerNumero = (number) => {
         if (number < 2) {
             return false;
@@ -365,5 +364,4 @@ if (algorithm == '#24 ¿es un numero primo?') {
 }
 
 if (algorithm == '#25 ') {
-
 }
