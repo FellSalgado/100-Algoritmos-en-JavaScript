@@ -13,7 +13,7 @@ number.toString();
 number.toLocaleString();
 number.toFixed(3);
 
-// ----------- JavaScript Numbers
+// ----------- JavaScript Numbers -------
 let pi = 3.141;
 
 pi.toFixed(0); //3
@@ -31,7 +31,7 @@ Number.MIN_VALUE;
 Number.NEGATIVE_INFINITY;
 Number.POSITIVE_INFINITY;
 
-// ----------- JavaScript Math
+// ----------- JavaScript Math ---------
 Math.PI;
 Math.round(4.4)//
 Math.pow(2, 8);

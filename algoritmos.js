@@ -965,3 +965,20 @@ if (algoritmo == '#72 sumando numeros de un arreglo') {
     alert(suma)
 }
 
+if (algoritmo == "sumar los salarios") {
+    const salaries = {
+        Felix: 100,
+        Pete: 160,
+        Pedro: 130,
+    }
+}
+
+if (algoritmo == "multiplicar propiedades numericas por 2") {
+    const menu = {
+        width: 200,
+        height: 400,
+        title: "Mi menú"
+    }
+
+    multiplicNumeric(menu);
+}
