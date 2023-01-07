@@ -1,7 +1,7 @@
 let a = 17;
 const ms = (message) => document.write(message + "<br>")
 
-if (a == "añadir propiedades") {
+/* if (a == "añadir propiedades") {
     const player = {
         name: "Felix",
         life: 99,
@@ -156,11 +156,11 @@ if (a == 10) {
     };
     //JSON.stringify(user);
 
-    /* JSON.stringify(user, ["age"])
+    JSON.stringify(user, ["age"])
     JSON.stringify(user, ["name", "age"])
     JSON.stringify(user, []) filtra todo
-    JSON.stringify(user, null) no filtra nada */
-    
+    JSON.stringify(user, null) no filtra nada
+
     const json1 = JSON.stringify(user, null, 2)
     //"2" <- los espacios en el json
     console.log(json1)
@@ -259,7 +259,7 @@ if (a == 16) {
 if (a == 17) {
     const keys = ["name", "life", "power"];
     const values = ["Felix", 99, 10];
-    
+
     const entries = values.map((value, index) => [keys[index],value]);
     const user = Object.fromEntries(entries);
     ms(Object.entries(user))
@@ -324,7 +324,7 @@ if (a == "verificar los vacios") {
     shedule["8: 30"] = "Hora de levantarse";
 
     console.log(shedule);
-}
+} */
 
 if (algoritmo == "sumar los salarios") {
     const salaries = {
@@ -332,6 +332,11 @@ if (algoritmo == "sumar los salarios") {
         Pete: 160,
         Pedro: 130,
     }
+    const sum = Object.values(salaries).reduce(
+        (total, salary) => total + salary,
+        0
+    );
+    console.log(sum);
 }
 
 if (algoritmo == "multiplicar propiedades numericas por 2") {

@@ -1,4 +1,4 @@
-let algoritmo = '#72 sumando numeros de un arreglo';
+let algoritmo = '#72';
 
 if (algoritmo == '#1 una contraseña') {
     let user = prompt('Ingrese su nombre de usuario:');
@@ -280,9 +280,9 @@ if (algoritmo == '#19 notas de un alumno') {
     }
 }
 
-/* desarrolle un programa que lea un numero entero
-y muestre si este es par o impar */
 if (algoritmo == '#20 ¿numero par o impar?') {
+    /* desarrolle un programa que lea un numero entero
+    y muestre si este es par o impar */
     let numero = parseInt(prompt('ingrese un numero'));
     let conversor = numero % 2;
 
@@ -959,26 +959,244 @@ if (algoritmo == '#71 obtener la raiz, cuadrada o cubica') {
 }
 
 if (algoritmo == '#72 sumando numeros de un arreglo') {
-    const numeros = [2, 2, 4, 4]
-    const suma = numeros.reduce((x, y) => x + y)
+    const numeros = [2, 2, 4, 4];
+    const suma = numeros.reduce((x, y) => x + y);
 
-    alert(suma)
+    alert(suma);
 }
 
-if (algoritmo == "sumar los salarios") {
+if (algoritmo == '#73 sumar los salarios') {
     const salaries = {
         Felix: 100,
         Pete: 160,
         Pedro: 130,
-    }
+    };
+    const sum = Object.values(salaries).reduce(
+        (total, salary) => total + salary,
+        0
+    );
+    console.log(sum);
 }
 
-if (algoritmo == "multiplicar propiedades numericas por 2") {
+//-----
+if (algoritmo == '#74 multiplicar propiedades numericas por 2') {
     const menu = {
         width: 200,
         height: 400,
-        title: "Mi menú"
-    }
+        title: 'Mi menú',
+    };
 
     multiplicNumeric(menu);
+}
+
+if (algoritmo == '#75 ¿Es un palindromo?') {
+    /* Escriba una función que determine
+    si una cadena dada es un palíndromo (es decir, se lee igual en ambos sentidos).
+    Por ejemplo, "racecar" es un palíndromo. */
+    function isPalindrome(str) {
+        str = str.toLowerCase();
+        return str === str.split('').reverse().join('');
+    }
+}
+
+if (algoritmo == '#76 Invertir una cadena') {
+    /* Escriba una función que acepte una
+    cadena y devuelva la cadena invertida.
+    Por ejemplo, "hello" debería devolver
+    "olleh". */
+    function reverseString(str) {
+        return str.split('').reverse().join('');
+    }
+}
+
+if (algoritmo == '#77 Sumar elementos de una matriz') {
+    /* Escriba una función que acepte una
+    matriz de números y devuelva la suma de
+    todos los números en la matriz. */
+    function sumArray(numbers) {
+        return numbers.reduce((acc, current) => acc + current, 0);
+    }
+}
+
+if (algoritmo == '#78 Concatenar elementos de una matriz en una sola cadena') {
+    /* Escriba una función que acepte una
+    matriz de cadenas y devuelva una cadena
+    que consista en todas las cadenas de la
+    matriz concatenadas juntas. */
+    function concatStrings(strings) {
+        return strings.join('');
+    }
+}
+
+if (algoritmo == '#79 Contar subcadenas en una cadena') {
+    /* Escriba una función que acepte una
+    cadena y devuelva el número de veces que
+    aparece una subcadena específica en la cadena. */
+    function countSubstring(str, substr) {
+        return (str.match(new RegExp(substr, 'g')) || []).length;
+    }
+}
+
+if (algoritmo == '#80 Convertir una cadena en una matriz de caracteres') {
+    /* Escriba una función que acepte una
+    cadena y devuelva una matriz de sus caracteres.
+    Por ejemplo, "hello" debería devolver
+    ['h', 'e', 'l', 'l', 'o']. */
+    function stringToArray(str) {
+        const arr = [];
+        for (let i = 0; i < str.length; i++) {
+            arr.push(str[i]);
+        }
+        return arr;
+    }
+}
+
+if (algoritmo == '#81 Filtrar números pares de una matriz') {
+    /* Escriba una función que acepte una
+    matriz de números y devuelva una nueva
+    matriz con solo los números pares. */
+    function getEvenNumbers(numbers) {
+        const evens = [];
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 === 0) {
+                evens.push(numbers[i]);
+            }
+        }
+        return evens;
+    }
+}
+
+if (algoritmo == '#82 Invertir el orden de las cadenas en una matriz') {
+    /* Escriba una función que acepte una
+    matriz de cadenas y devuelva una nueva
+    matriz con las cadenas en orden inverso. */
+    function reverseStrings(strings) {
+        const reversed = [];
+        for (let i = strings.length - 1; i >= 0; i--) {
+            reversed.push(strings[i]);
+        }
+        return reversed;
+    }
+}
+
+if (algoritmo == '#83 busqueda binaria') {
+    function binarySearch(array, target) {
+        let left = 0;
+        let right = array.length - 1;
+        while (left <= right) {
+            const middle = left + Math.floor((right - left) / 2);
+            if (array[middle] === target) {
+                return middle;
+            }
+            if (array[middle] < target) {
+                left = middle + 1;
+            } else {
+                right = middle - 1;
+            }
+        }
+        return -1;
+    }
+}
+
+if (algoritmo == '#84 Quicksort') {
+    function quickSort(array) {
+        if (array.length <= 1) {
+            return array;
+        }
+        const pivot = array[array.length - 1];
+        const left = [];
+        const right = [];
+        for (let i = 0; i < array.length - 1; i++) {
+            if (array[i] < pivot) {
+                left.push(array[i]);
+            } else {
+                right.push(array[i]);
+            }
+        }
+        return [...quickSort(left), pivot, ...quickSort(right)];
+    }
+}
+
+if (algoritmo == '#85 Merge sort') {
+    function mergeSort(array) {
+        if (array.length <= 1) {
+            return array;
+        }
+        const middle = Math.floor(array.length / 2);
+        const left = array.slice(0, middle);
+        const right = array.slice(middle);
+        return merge(mergeSort(left), mergeSort(right));
+    }
+    function merge(left, right) {
+        const result = [];
+        while (left.length > 0 && right.length > 0) {
+            if (left[0] < right[0]) {
+                result.push(left.shift());
+            } else {
+                result.push(right.shift());
+            }
+        }
+        return [...result, ...left, ...right];
+    }
+}
+
+if (algoritmo == '#86 Eliminar el último elemento de una matriz') {
+    const arr = [1, 2, 3, 4, 5];
+    arr.pop(); // elimina el elemento 5 de la matriz
+    console.log(arr); // imprime [1, 2, 3, 4]
+}
+
+if (algoritmo == '#87 Calcular la suma de los elementos de una matriz') {
+    const arr = [1, 2, 3, 4, 5];
+    let sum = 0;
+    while (arr.length > 0) {
+        sum += arr.pop();
+    }
+    console.log(sum); // imprime 15
+}
+
+if (algoritmo == '#88 Invertir el orden de los elementos en una matriz') {
+    const arr = [1, 2, 3, 4, 5];
+    const reversedArr = [];
+    while (arr.length > 0) {
+        reversedArr.push(arr.pop());
+    }
+    console.log(reversedArr); // imprime [5, 4, 3, 2, 1]
+}
+
+if (algoritmo == '#89 Extraer una submatriz de elementos de una matriz dada con el método slice()') {
+    // Inicializamos una matriz de números enteros
+    const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    // Definimos una función que acepta dos índices (start y end) y extrae
+    // una submatriz de la matriz dada con los elementos comprendidos entre
+    // start y end (inclusive)
+    function extractSubarray(array, start, end) {
+        // Usamos el método slice() para extraer la submatriz desde la matriz dada
+        const subarray = array.slice(start, end + 1);
+        return subarray;
+    }
+
+    // Probar la función con diferentes valores de start y end
+    console.log(extractSubarray(arr, 0, 4)); // imprime [1, 2, 3, 4, 5]
+    console.log(extractSubarray(arr, 3, 7)); // imprime [4, 5, 6, 7, 8]
+    console.log(extractSubarray(arr, 5, 9)); // imprime [6, 7, 8, 9, 10]
+}
+
+if (algoritmo == '#90 Transformando la lista') {
+    //Tenemos una lista de números enteros y queremos eliminar todos los elementos
+    //pares y añadir el doble de cada elemento impar en su lugar.
+    let lista = [1, 2, 3, 4, 5, 6, 7, 8];
+
+    let i = 0;
+    while (i < lista.length) {
+        if (lista[i] % 2 == 0) {
+            lista.splice(i, 1); // Eliminar el elemento par
+        } else {
+            lista.splice(i, 1, lista[i] * 2); // Reemplazar el elemento impar por su doble
+            i += 1; // Avanzar el índice en una posición
+        }
+    }
+
+    console.log(lista); // imprime [2, 6, 10, 14]
 }

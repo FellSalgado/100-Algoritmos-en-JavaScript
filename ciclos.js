@@ -363,5 +363,44 @@ if (algorithm == '#24 numeros primos') {
     }
 }
 
-if (algorithm == '#25 ') {
+if (algorithm == '#25 Convertir una cadena en una matriz de caracteres') {
+    /* Escriba una función que acepte una
+    cadena y devuelva una matriz de sus caracteres.
+    Por ejemplo, "hello" debería devolver
+    ['h', 'e', 'l', 'l', 'o']. */
+    function stringToArray(str) {
+        const arr = [];
+        for (let i = 0; i < str.length; i++) {
+            arr.push(str[i]);
+        }
+        return arr;
+    }
+}
+
+if (algorithm == '#26 Filtrar números pares de una matriz') {
+    /* Escriba una función que acepte una
+    matriz de números y devuelva una nueva
+    matriz con solo los números pares. */
+    function getEvenNumbers(numbers) {
+        const evens = [];
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 === 0) {
+                evens.push(numbers[i]);
+            }
+        }
+        return evens;
+    }
+}
+
+if (algorithm == '#27 Invertir el orden de las cadenas en una matriz') {
+    /* Escriba una función que acepte una
+    matriz de cadenas y devuelva una nueva
+    matriz con las cadenas en orden inverso. */
+    function reverseStrings(strings) {
+        const reversed = [];
+        for (let i = strings.length - 1; i >= 0; i--) {
+            reversed.push(strings[i]);
+        }
+        return reversed;
+    }
 }
